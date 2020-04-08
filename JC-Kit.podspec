@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "JC-Kit"
-  spec.version      = "0.0.3"
+  spec.version      = "0.0.4"
   spec.summary      = "Components library"
 
   spec.description  = <<-DESC
