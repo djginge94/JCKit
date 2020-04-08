@@ -16,6 +16,7 @@
 		42133C53243E881A0025F0E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42133C51243E881A0025F0E5 /* Main.storyboard */; };
 		42133C55243E882D0025F0E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42133C54243E882D0025F0E5 /* Assets.xcassets */; };
 		42133C58243E882D0025F0E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42133C56243E882D0025F0E5 /* LaunchScreen.storyboard */; };
+		42133C5E243E8FAC0025F0E5 /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42133C5D243E8FAC0025F0E5 /* Constraints.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		42133C54243E882D0025F0E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42133C57243E882D0025F0E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42133C59243E882E0025F0E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42133C5D243E8FAC0025F0E5 /* Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		42133C2D243E86DF0025F0E5 /* JCKit */ = {
 			isa = PBXGroup;
 			children = (
+				42133C5D243E8FAC0025F0E5 /* Constraints.swift */,
 				42133C2E243E86DF0025F0E5 /* JCKit.h */,
 				42133C2F243E86DF0025F0E5 /* Info.plist */,
 			);
@@ -202,6 +205,7 @@
 				TargetAttributes = {
 					42133C2A243E86DF0025F0E5 = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
 					};
 					42133C33243E86E10025F0E5 = {
 						CreatedOnToolsVersion = 11.4;
@@ -263,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42133C5E243E8FAC0025F0E5 /* Constraints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +442,7 @@
 		42133C40243E86E10025F0E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 3SZ5Q7PFC5;
@@ -455,6 +461,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -463,6 +470,7 @@
 		42133C41243E86E10025F0E5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 3SZ5Q7PFC5;
@@ -489,6 +497,7 @@
 		42133C43243E86E10025F0E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3SZ5Q7PFC5;
 				INFOPLIST_FILE = JCKitTests/Info.plist;
@@ -507,6 +516,7 @@
 		42133C44243E86E10025F0E5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3SZ5Q7PFC5;
 				INFOPLIST_FILE = JCKitTests/Info.plist;
