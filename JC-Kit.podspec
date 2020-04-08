@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 
-  spec.name         = "JCKit"
+  spec.name         = "JC-Kit"
   spec.version      = "0.0.1"
   spec.summary      = "Components library"
 
